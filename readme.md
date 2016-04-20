@@ -1,4 +1,4 @@
-## I'm learning Salt.
+## I'm learning Salt. Hashtag dealwithit
 
 Formulas in this repo are to be considered crazy WIP and not for production.
 
