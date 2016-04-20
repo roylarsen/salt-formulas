@@ -19,7 +19,7 @@ Create site dir:
 Create site:
   file.managed:
     - name: /var/www/{{ nginx.site }}/index.html
-    - source: salt://webserver/index.html
+    - source: salt://nginx/files/index.html
     - owner: nginx
     - group: nginx
     - mode: 0755
