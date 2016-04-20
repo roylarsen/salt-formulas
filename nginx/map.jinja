@@ -1,0 +1,9 @@
+{% set nginx = salt['grains.filter_by']({
+  'Default': {
+    'port': '80',
+    'site': 'nginx-site',
+    'root': "/",
+    'proxy': 'localhost',
+  },
+},
+merge=salt['pillar.get']('nginx:lookup',default='default')) %}

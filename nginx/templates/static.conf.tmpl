@@ -1,0 +1,9 @@
+{%- from 'nginx/map.jinja' import nginx with context -%}
+
+server{
+    listen {{ nginx.port }};
+    location {{ nginx.root }}{
+        root /var/www/{{ nginx.site }};
+        index index.html;
+    }
+}

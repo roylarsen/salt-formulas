@@ -1,0 +1,8 @@
+{%- from 'nginx/map.jinja' import nginx with context -%}
+
+server{
+    listen {{ nginx.port }};
+    location {{ nginx.root }}{
+        proxy_pass {{ nginx.proxy }};
+    }
+}
